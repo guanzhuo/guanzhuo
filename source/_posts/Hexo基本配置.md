@@ -26,8 +26,6 @@ hexo的基本配置
 ssh-keygen -t rsa -C "username@qq.com"
 ```
 
-
-
 ![key](key.png)
 
 ```
@@ -36,29 +34,31 @@ $ ssh-add ~/.ssh/id_rsa
 （找不到文件再使用）ssh-agent bash
 ```
 
-![load](load.png)
+如果出现Could not open a connection to your authentication agent
 
-##### 4、创建文件夹
-
-```
-hexo init
-npm install
-npm install hexo -server --save
-```
-
-输入
+在c盘下找到.ssh文件夹，cmd进入到该层目录（C:\Users\Administrator\.ssh）输入：
 
 ```
-hexo server
+ssh-agent bash
 ```
 
-本地访问 localhost:4000 即可
-
-##### 5、配置到GIT
+如果提示
 
 ```
-npm install hexo-deployer-git --save
+unable to start ssh-agent service, error :1058
 ```
+
+在计算机服务中，找到OpenSSH Authentication Agent 服务，将禁用更改为手动或者自动，启动该服务，即可
+
+再执行
+
+```
+ssh-add id_rsa
+```
+
+![git_add](gitadd.png)
+
+将密钥配置到GIT ssh中
 
 Git 上设置密钥
 
@@ -77,6 +77,38 @@ ssh -T git@github.com
 ![git](git1.png)
 
 ![git](git2.png)
+
+##### 4、创建文件夹
+
+```
+npm install
+#安装hexo
+#可以更换淘宝镜像
+#npm config set registry https://registry.npm.taobao.org
+#验证  输入 npm config get registry
+#输出 https://registry.npm.taobao.org/ 镜像更换好了
+npm install hexo -g
+npm install hexo -server --save
+hexo init
+```
+
+输入
+
+```
+hexo server
+```
+
+本地访问 localhost:4000 即可
+
+##### 5、配置hexo到Git
+
+部署到Git 之前，需要安装
+
+```
+npm install hexo-deployer-git --save
+```
+
+
 
 ##### 6、修改配置信息
 
