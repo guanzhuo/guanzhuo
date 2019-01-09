@@ -105,13 +105,13 @@
 <meta property="og:description" content="Hexo的基本配置hexo的基本配置 1、安装 Git推荐网址：http://www.bootcss.com/p/git-guide/ 这个网指南不错，而且是中文的，介绍的很详细 2、安装 node推荐网址：http://www.runoob.com/nodejs/nodejs-install-setup.html 进行安装node 3、生成 Key1ssh-keygen -t rsa -C &amp;q">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://guanzhuo.github.io/2019/01/07/Hexo基本配置/key.png">
-<meta property="og:image" content="https://guanzhuo.github.io/2019/01/07/Hexo基本配置/load.png">
+<meta property="og:image" content="https://guanzhuo.github.io/2019/01/07/Hexo基本配置/gitadd.png">
 <meta property="og:image" content="https://guanzhuo.github.io/2019/01/07/Hexo基本配置/git.png">
 <meta property="og:image" content="https://guanzhuo.github.io/2019/01/07/Hexo基本配置/res.png">
 <meta property="og:image" content="https://guanzhuo.github.io/2019/01/07/Hexo基本配置/git1.png">
 <meta property="og:image" content="https://guanzhuo.github.io/2019/01/07/Hexo基本配置/git2.png">
 <meta property="og:image" content="https://guanzhuo.github.io/2019/01/07/Hexo基本配置/repo.png">
-<meta property="og:updated_time" content="2019-01-08T09:18:50.337Z">
+<meta property="og:updated_time" content="2019-01-09T00:57:07.802Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo基本配置">
 <meta name="twitter:description" content="Hexo的基本配置hexo的基本配置 1、安装 Git推荐网址：http://www.bootcss.com/p/git-guide/ 这个网指南不错，而且是中文的，介绍的很详细 2、安装 node推荐网址：http://www.runoob.com/nodejs/nodejs-install-setup.html 进行安装node 3、生成 Key1ssh-keygen -t rsa -C &amp;q">
@@ -412,7 +412,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-08 17:18:50" itemprop="dateModified" datetime="2019-01-08T17:18:50+08:00">2019-01-08</time>
+                <time title="修改时间：2019-01-09 08:57:07" itemprop="dateModified" datetime="2019-01-09T08:57:07+08:00">2019-01-09</time>
               
             
           </span>
@@ -470,12 +470,16 @@
 <h5 id="3、生成-Key"><a href="#3、生成-Key" class="headerlink" title="3、生成 Key"></a>3、生成 Key</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;username@qq.com&quot;</span><br></pre></td></tr></table></figure>
 <p><img src="//guanzhuo.github.io/2019/01/07/Hexo基本配置/key.png" alt="key"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-add ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line">（找不到文件再使用）ssh-agent bash</span><br></pre></td></tr></table></figure>
-<p><img src="//guanzhuo.github.io/2019/01/07/Hexo基本配置/load.png" alt="load"></p>
-<h5 id="4、创建文件夹"><a href="#4、创建文件夹" class="headerlink" title="4、创建文件夹"></a>4、创建文件夹</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">npm install hexo -server --save</span><br></pre></td></tr></table></figure>
-<p>输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p>本地访问 localhost:4000 即可</p>
-<h5 id="5、配置到GIT"><a href="#5、配置到GIT" class="headerlink" title="5、配置到GIT"></a>5、配置到GIT</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>如果出现Could not open a connection to your authentication agent</p>
+<p>在c盘下找到.ssh文件夹，cmd进入到该层目录（C:\Users\Administrator.ssh）输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash</span><br></pre></td></tr></table></figure>
+<p>如果提示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unable to start ssh-agent service, error :1058</span><br></pre></td></tr></table></figure>
+<p>在计算机服务中，找到OpenSSH Authentication Agent 服务，将禁用更改为手动或者自动，启动该服务，即可</p>
+<p>再执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-add id_rsa</span><br></pre></td></tr></table></figure>
+<p><img src="//guanzhuo.github.io/2019/01/07/Hexo基本配置/gitadd.png" alt="git_add"></p>
+<p>将密钥配置到GIT ssh中</p>
 <p>Git 上设置密钥</p>
 <p><img src="//guanzhuo.github.io/2019/01/07/Hexo基本配置/git.png" alt="git"></p>
 <p>查看密钥是否成功</p>
@@ -484,6 +488,12 @@
 <p>同时Git上这两个地方也需要修改</p>
 <p><img src="//guanzhuo.github.io/2019/01/07/Hexo基本配置/git1.png" alt="git"></p>
 <p><img src="//guanzhuo.github.io/2019/01/07/Hexo基本配置/git2.png" alt="git"></p>
+<h5 id="4、创建文件夹"><a href="#4、创建文件夹" class="headerlink" title="4、创建文件夹"></a>4、创建文件夹</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">#安装hexo</span><br><span class="line">#可以更换淘宝镜像</span><br><span class="line">#npm config set registry https://registry.npm.taobao.org</span><br><span class="line">#验证  输入 npm config get registry</span><br><span class="line">#输出 https://registry.npm.taobao.org/ 镜像更换好了</span><br><span class="line">npm install hexo -g</span><br><span class="line">npm install hexo -server --save</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p>输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>本地访问 localhost:4000 即可</p>
+<h5 id="5、配置hexo到Git"><a href="#5、配置hexo到Git" class="headerlink" title="5、配置hexo到Git"></a>5、配置hexo到Git</h5><p>部署到Git 之前，需要安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <h5 id="6、修改配置信息"><a href="#6、修改配置信息" class="headerlink" title="6、修改配置信息"></a>6、修改配置信息</h5><p>仓库地址：Repo</p>
 <p><img src="//guanzhuo.github.io/2019/01/07/Hexo基本配置/repo.png" alt="repo"></p>
 <h5 id="7、编译部署"><a href="#7、编译部署" class="headerlink" title="7、编译部署"></a>7、编译部署</h5><p>新建  hexo new “gz测试”</p>
@@ -610,7 +620,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -635,7 +645,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">6</span>
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -658,7 +670,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -720,7 +734,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo的基本配置"><span class="nav-text">Hexo的基本配置</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、安装-Git"><span class="nav-text">1、安装 Git</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、安装-node"><span class="nav-text">2、安装 node</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、生成-Key"><span class="nav-text">3、生成 Key</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4、创建文件夹"><span class="nav-text">4、创建文件夹</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5、配置到GIT"><span class="nav-text">5、配置到GIT</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6、修改配置信息"><span class="nav-text">6、修改配置信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7、编译部署"><span class="nav-text">7、编译部署</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Hexo的基本配置"><span class="nav-text">Hexo的基本配置</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、安装-Git"><span class="nav-text">1、安装 Git</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、安装-node"><span class="nav-text">2、安装 node</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、生成-Key"><span class="nav-text">3、生成 Key</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4、创建文件夹"><span class="nav-text">4、创建文件夹</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5、配置hexo到Git"><span class="nav-text">5、配置hexo到Git</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6、修改配置信息"><span class="nav-text">6、修改配置信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7、编译部署"><span class="nav-text">7、编译部署</span></a></li></ol></li></ol></div>
             
 
           </div>
