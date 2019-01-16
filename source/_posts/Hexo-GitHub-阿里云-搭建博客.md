@@ -21,7 +21,7 @@ username.github.io ==> http://www.azxcvb.cn/
 
 配置域名解析
 
-![阿里云](aly.png)
+![aly](aly.png)
 
 需要注意：
 
@@ -60,13 +60,12 @@ hexo deploy
 
 进入博客仓库的page界面，找到setting界面
 
-![setting](set.png)
+![set](set.png)
 
 找到Custom domain，将域名填写到这里保存www.azxcvb.cn
 
-![custom](cus.png)
+![cus](cus.png)
 
 通过http://www.azxcvb.cn/ 就可以访问之前的username.github.io界面
-
 
 
