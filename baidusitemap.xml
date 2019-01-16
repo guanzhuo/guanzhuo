@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://azxcvb.coding.me/blog/blog/hello-world.html</loc>
+    <lastmod>2019-01-16</lastmod>
+  </url>  <url>
     <loc>http://azxcvb.coding.me/blog/blog/Hexo-GitHub-%E9%98%BF%E9%87%8C%E4%BA%91-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html</loc>
-    <lastmod>2019-01-15</lastmod>
+    <lastmod>2019-01-16</lastmod>
   </url>  <url>
     <loc>http://azxcvb.coding.me/blog/blog/Flutter.html</loc>
     <lastmod>2019-01-15</lastmod>
@@ -30,8 +33,5 @@
   </url>  <url>
     <loc>http://azxcvb.coding.me/blog/blog/%E6%B5%8B%E8%AF%95.html</loc>
     <lastmod>2019-01-06</lastmod>
-  </url>  <url>
-    <loc>http://azxcvb.coding.me/blog/blog/hello-world.html</loc>
-    <lastmod>2017-10-28</lastmod>
   </url>
 </urlset>
