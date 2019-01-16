@@ -12,9 +12,11 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://guanzhuo.github.io
+url: https://www.azxcvb.cn
+#url: http://azxcvb.coding.me/blog/
 root: /
-permalink: :year/:month/:day/:title/
+#:year/:month/:day/
+permalink: :title.html
 permalink_defaults:
 
 # Directory
@@ -78,7 +80,9 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git 
-  repo: git@github.com:guanzhuo/guanzhuo.git 
+  repo: 
+    github: git@github.com:guanzhuo/guanzhuo.git
+    coding: git@git.dev.tencent.com:azxcvb/blog.git
   branch: master 
   
 live2d:

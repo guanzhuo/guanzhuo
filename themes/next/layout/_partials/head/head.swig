@@ -54,7 +54,7 @@
 {% endif %}
 
 {% if theme.qihu_site_verification %}
-  <meta name="360-site-verification" content="{{ theme.qihu_site_verification }}"/>
+  <meta name="360-site-verification" content="OFTVN3quaX"/>
 {% endif %}
 
 {% if theme.fancybox %}
