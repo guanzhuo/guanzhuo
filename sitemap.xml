@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.azxcvb.cn/about/index.html</loc>
+    
+    <lastmod>2019-01-16T06:20:48.152Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.azxcvb.cn/hello-world.html</loc>
     
     <lastmod>2019-01-16T03:42:17.077Z</lastmod>
@@ -65,13 +72,6 @@
   </url>
   
   <url>
-    <loc>https://www.azxcvb.cn/about/index.html</loc>
-    
-    <lastmod>2019-01-06T09:33:48.423Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.azxcvb.cn/tags/index.html</loc>
     
     <lastmod>2019-01-06T09:29:50.928Z</lastmod>
@@ -89,13 +89,6 @@
     <loc>https://www.azxcvb.cn/categories/index.html</loc>
     
     <lastmod>2019-01-06T07:35:36.985Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.azxcvb.cn/%E6%B5%8B%E8%AF%95.html</loc>
-    
-    <lastmod>2019-01-06T07:02:17.142Z</lastmod>
     
   </url>
   
