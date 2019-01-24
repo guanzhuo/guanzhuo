@@ -15,13 +15,13 @@ categories: "Hexo"
 
 修改如下：
 
-![auto](auto_excerpt.png)
+![auto](/images/Hexo-next主题的优化-持续更新/auto_excerpt.png)
 
 将enable改为true即可
 
 ##### 2.设置头像
 
-![setIcon](setIcon.png)
+![setIcon](/images/Hexo-next主题的优化-持续更新/setIcon.png)
 
 头像的地址：themes\next\source\images
 
@@ -41,7 +41,7 @@ categories: "Hexo"
 
 <script type="text/javascript" src="/js/src/clicklove.js"></script>
 
-![click](click.png)
+![click](/images/Hexo-next主题的优化-持续更新/click.png)
 
 ##### 4.添加动图
 
@@ -79,14 +79,14 @@ live2d:
 
 去点之前
 
-![旧](mulu.png)
+![旧](/images/Hexo-next主题的优化-持续更新/mulu.png)
 
 去掉之后
 
-![新](mulnNew.png)
+![新](/images/Hexo-next主题的优化-持续更新/mulnNew.png)
 
 修改
 
-![](2.png)
+![2](/images/Hexo-next主题的优化-持续更新/2.png)
 
 number设置为false即可

@@ -21,7 +21,7 @@ username.github.io ==> http://www.azxcvb.cn/
 
 配置域名解析
 
-![aly](aly.png)
+![aly](/images/Hexo-GitHub-阿里云-搭建博客/aly.png)
 
 需要注意：
 
@@ -37,7 +37,7 @@ username.github.io ==> http://www.azxcvb.cn/
 
 将Hexo根目录下的index.html打开，修改为如下
 
-![hexo](hexo.png)
+![hexo](/images/Hexo-GitHub-阿里云-搭建博客/hexo.png)
 
 ##### 2、增加CNAME文件
 
@@ -60,11 +60,11 @@ hexo deploy
 
 进入博客仓库的page界面，找到setting界面
 
-![set](set.png)
+![set](/images/Hexo-GitHub-阿里云-搭建博客/set.png)
 
 找到Custom domain，将域名填写到这里保存www.azxcvb.cn
 
-![cus](cus.png)
+![cus](/images/Hexo-GitHub-阿里云-搭建博客/cus.png)
 
 通过http://www.azxcvb.cn/ 就可以访问之前的username.github.io界面
 

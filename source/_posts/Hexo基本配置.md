@@ -26,7 +26,7 @@ hexo的基本配置
 ssh-keygen -t rsa -C "username@qq.com"
 ```
 
-![key](key.png)
+![key](/images/Hexo基本配置/key.png)
 
 ```
 $ ssh-add ~/.ssh/id_rsa
@@ -56,13 +56,13 @@ unable to start ssh-agent service, error :1058
 ssh-add id_rsa
 ```
 
-![git_add](gitadd.png)
+![git_add](/images/Hexo基本配置/gitadd.png)
 
 将密钥配置到GIT ssh中
 
 Git 上设置密钥
 
-![git](git.png)
+![git](/images/Hexo基本配置/git.png)
 
 查看密钥是否成功
 
@@ -70,13 +70,13 @@ Git 上设置密钥
 ssh -T git@github.com
 ```
 
-![res](res.png)
+![res](/images/Hexo基本配置/res.png)
 
 同时Git上这两个地方也需要修改
 
-![git](git1.png)
+![git](/images/Hexo基本配置/git1.png)
 
-![git](git2.png)
+![git](/images/Hexo基本配置/git2.png)
 
 ##### 4、创建文件夹
 
@@ -114,7 +114,7 @@ npm install hexo-deployer-git --save
 
 仓库地址：Repo
 
-![repo](repo.png)
+![repo](/images/Hexo基本配置/repo.png)
 
 ##### 7、编译部署
 

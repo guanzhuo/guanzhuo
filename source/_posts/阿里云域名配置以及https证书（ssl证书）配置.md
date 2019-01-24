@@ -12,21 +12,21 @@ categories: "服务器"
 
 
 
-![1.png](1.png)
+![1.png](/images/阿里云域名配置以及https证书/1.png)
 配置好之后，之前通过http://XX.XX.XX.XX:8080访问的地址可以通过http://域名:8080访问
 
 **开始配置HTTPS**
 在阿里云搜索框中进行搜索**ssl证书**
 点击进入
-![2](2.png)
+![2](/images/阿里云域名配置以及https证书/2.png)
 点击立即购买
 选择以下这几个选项，有**免费**的，只是安全性差点，点击购买
-![3](3.png)
+![3](/images/阿里云域名配置以及https证书/3.png)
 再次进入控制台就会看到以下实例，不过状态这里是没有签发，需要补全信息，进行审核，信息不是很多，审核很快的，基本上30分钟之内
 ![在这里插入图片描述](https://img-blog.csdn.net/20181014100109827?0000000watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTMwMDk4MDg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 配置完之后，点击后边下载，
-![4](4.png)
+![4](/images/阿里云域名配置以及https证书/4.png)
 选择自己的服务器，我这里配置的是tomcat
 
 ##### 一、配置tomcat的https
@@ -109,3 +109,4 @@ server{
 静态文件对应的地址：
 如果访问的路径中包含resources/，则会跳转到具体的静态文件路径中
 访问的地址为：http://online2.DDDD.cn/resources/image.png 就可以访问具体的文件了
+

@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget{
 
 运行的效果
 
-![hello](Flutter/hello.png)
+![hello](/images/Flutter/hello.png)
 
 #### 2、文本的使用
 
@@ -74,7 +74,7 @@ class MyApp extends StatelessWidget{
 }
 ```
 
-![text](Flutter/text.png)
+![text](/images/Flutter/text.png)
 
 #### 3、图片使用
 
@@ -114,7 +114,7 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-![image](Flutter/image.png)
+![image](/images/Flutter/image.png)
 
 #### 4、滚动水平进行滑动
 
@@ -176,7 +176,7 @@ class MyList extends StatelessWidget {
 
 效果
 
-![list](Flutter/list.png)
+![list](/images/Flutter/list.png)
 
 #### 5、整体滑动
 
@@ -223,7 +223,7 @@ class MyApp extends StatelessWidget {
 
 滑动效果
 
-![movie](Flutter/movie.png)
+![movie](/images/Flutter/movie.png)
 
 #### 6、底部导航栏
 
@@ -231,7 +231,7 @@ class MyApp extends StatelessWidget {
 
 navigation.dart (first.dart  second.dart  third.dart三个界面)
 
-![lib](Flutter/lib.png)
+![lib](/images/Flutter/lib.png)
 
 ##### 2、navigation.dart
 
@@ -340,9 +340,9 @@ class FirstState extends State<First>{
 }
 ```
 
-![find](Flutter/find.png)
+![find](/images/Flutter/find.png)
 
-![index](Flutter/index.png)
+![index](/images/Flutter/index.png)
 
 
 
